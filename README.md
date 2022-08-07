@@ -1,6 +1,7 @@
-# JuliaHealth Sample Data
+# JuliaHealthSampleData
 
 Sample health data sources for a variety of health formats and use cases.
+Uses the wonderful [DataDeps.jl](https://github.com/oxinabox/DataDeps.jl) package to automatically download, hash, and manage the download for you.
 
 # Provided Data Sources
 
