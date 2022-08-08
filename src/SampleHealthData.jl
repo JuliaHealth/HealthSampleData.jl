@@ -1,4 +1,4 @@
-module JuliaHealthSampleData
+module HealthSampleData
 
 	using DataDeps
 
