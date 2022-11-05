@@ -1,0 +1,7 @@
+name = "tests"
+uuid = "81e8902f-febf-4935-bfea-b5dd0db5bcfd"
+authors = ["vchinta6 "]
+version = "0.1.0"
+
+[deps]
+SQLite = "0aa819cd-b072-5ff4-a722-6bc24af294d9"
