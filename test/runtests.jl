@@ -3,7 +3,7 @@ using HealthSampleData
 using SQLite
 using Test
 
-# TODO: Write why this is needed
+# NOTE: Configuration for the GitHub CI to always accept a prompt
 ENV["DATADEPS_ALWAYS_ACCEPT"] = true
 
 include("src/tests.jl")
