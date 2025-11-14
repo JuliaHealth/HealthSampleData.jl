@@ -1,17 +1,15 @@
 name = "HealthSampleData"
 uuid = "85295614-c7c2-47eb-9e31-7664d7fbe6db"
-authors = ["TheCedarPrince <jacobszelko@gmail.com>, ParamThakkar123 <paramthakkar864@gmail.com> and contributors"]
 version = "0.0.1"
+authors = ["TheCedarPrince <jacobszelko@gmail.com>, ParamThakkar123 <paramthakkar864@gmail.com> and contributors"]
 
 [deps]
 DataDeps = "124859b0-ceae-595e-8997-d05f6a7a8dfe"
+Downloads = "f43a241f-c20a-4ad4-852c-f6b1247861c6"
+HuggingFaceHub = "d0076355-e2c0-48e6-a044-05906e51b7fc"
+Logging = "56ddb016-857b-54e1-b83d-db4d58db5568"
 
 [compat]
 DataDeps = "0.7"
+Downloads = "1.6.0"
 julia = "1.10"
-
-[extras]
-Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
-
-[targets]
-test = ["Test"]

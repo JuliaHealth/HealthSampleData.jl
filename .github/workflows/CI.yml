@@ -13,6 +13,10 @@ concurrency:
   cancel-in-progress: ${{ startsWith(github.ref, 'refs/pull/') }}
 jobs:
   test:
+    env:
+      DATADEPS_ALWAYS_ACCEPT: "true"
+      DATADEPS_PROGRESS_UPDATE_PERIOD: "Inf"
+      DATADEPS_DISABLE_DOWNLOAD: "false"
     name: Julia ${{ matrix.version }} - ${{ matrix.os }} - ${{ matrix.arch }}
     runs-on: ${{ matrix.os }}
     timeout-minutes: 60
@@ -46,6 +50,10 @@ jobs:
           fail_ci_if_error: false
   docs:
     name: Documentation
+    env:
+      DATADEPS_ALWAYS_ACCEPT: "true"
+      DATADEPS_PROGRESS_UPDATE_PERIOD: "Inf"
+      DATADEPS_DISABLE_DOWNLOAD: "false"
     runs-on: ubuntu-latest
     permissions:
       actions: write # needed to allow julia-actions/cache to proactively delete old caches that it has created
